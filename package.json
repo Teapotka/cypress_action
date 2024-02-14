@@ -9,7 +9,8 @@
     "test": "ng test",
     "build:prod": "ng build --configuration production --base-href https://teapotka.github.io/test/",
     "test:headless": "ng test --watch=false --browsers=ChromeHeadless",
-    "cypress-component": "cypress run --component"
+    "cypress-component": "cypress run --component",
+    "cypress-e2e": "cypress run --e2e"
   },
   "private": true,
   "dependencies": {

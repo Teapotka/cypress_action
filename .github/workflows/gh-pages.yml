@@ -20,6 +20,15 @@ jobs:
     - name: Install dependencies
       run: npm install
     
+    - name: Start localhost server
+      run: npm start &
+
+    - name: Wait for localhost to be available
+      run: sleep 10
+
+    - name: Run E2E tests
+      run: npm run cypress-e2e
+      
     - name: Run cypress
       run: npm run cypress-component
 
